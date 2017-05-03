@@ -55,6 +55,7 @@ public abstract class SingleCommand implements Command{
 	 * 
 	 * @return state whether call is successful
 	 */
+	@Override
 	public boolean call() {
 		if (!finished) {
 			command();
@@ -80,6 +81,7 @@ public abstract class SingleCommand implements Command{
 		return false;
 	}
 	
+	@Override
 	public boolean isFinished() {
 		return finished;
 	}
