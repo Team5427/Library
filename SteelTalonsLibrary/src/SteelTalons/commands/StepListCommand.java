@@ -91,11 +91,11 @@ public class StepListCommand implements Command
      */
     @Override
     public boolean isFinished() {
-        return (commandList == null || index >= commandList.size());
+        return commandList == null || index >= commandList.size();
     }
 
     /**
-     * Returns command list arraylist
+     * Returns command list ArrayList
      *
      * @return command list
      */
