@@ -78,7 +78,7 @@ public abstract class TimedLoopCommand implements Command {
 	 * @return true if command is finished, false if not
 	 */
 	@Override
-	public final boolean isFinished() {
+	public boolean isFinished() {
 		return timer.getTime() < 0;
 	}
 	
