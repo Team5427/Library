@@ -24,10 +24,9 @@ public abstract class SingleCommand implements Command{
 	private boolean lockForceCall = true;
 	
 	/**
-	 * Default force calls states
+	 * Default constructor
 	 */
 	public SingleCommand() {
-		
 	}
 	
 	/**
@@ -65,11 +64,11 @@ public abstract class SingleCommand implements Command{
 		
 		return false;
 	}
-	
+
 	/**
 	 * Forces the command to be called, even when command has ran or call method
 	 * has already ran if possible.
-	 * 
+	 *
 	 * @return state whether forceCall is successful
 	 */
 	public boolean forceCall() {
@@ -77,14 +76,20 @@ public abstract class SingleCommand implements Command{
 			command();
 			return true;
 		}
-		
+
 		return false;
 	}
-	
+
+	/**
+	 * Returns the state whether command is finished
+	 *
+	 * @return state if command is finished
+	 */
 	@Override
 	public boolean isFinished() {
 		return finished;
 	}
+
 	/**
 	 * Command that will run. Write commands here
 	 */
