@@ -1,0 +1,1 @@
+Makes a .gitignore file when you execute the batch file. Double click 'gitignore maker.bat' to run it.
